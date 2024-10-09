@@ -27,7 +27,6 @@ int main(int argc, char **argv) {
 		progpath[len] = '\0';
 	}
 
-	// Open pipe
 	int channel[2];
 	if (pipe(channel) == -1) {
 		const char msg[] = "error: failed to create pipe\n";
