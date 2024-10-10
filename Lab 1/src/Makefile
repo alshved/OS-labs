@@ -1,7 +1,7 @@
 cc = gcc
-all: posix_ipc-server posix_ipc-client
-posix_ipc-client: posix_ipc-client.c
-	cc posix_ipc-client.c -o posix_ipc-client
+all: parent child
+child: child.c
+	cc child.c -o child
 
-posix_ipc-server: posix_ipc-server.c
-	cc posix_ipc-server.c -o posix_ipc-server
+parent: parent.c
+	cc parent.c -o parent
